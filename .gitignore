@@ -1,0 +1,24 @@
+# Dependency directories
+/node_modules
+
+# Build artifacts
+/dist
+/build
+/out
+
+# Log files
+*.log
+npm-debug.log*
+
+# Environment variables and sensitive data
+.env
+.env.local
+.env.*.local
+
+# IDE-specific files (example for VS Code)
+.vscode/
+.idea/
+
+# Operating System generated files
+.DS_Store
+Thumbs.db

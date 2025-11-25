@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SeeMyPortfolio</title>
+    <link rel="stylesheet" href="meyerweb_reset.css">
+    <style>
+
+        body {
+            font-family: Verdana, Helvetica, sans-serif;
+        }
+
+        .menu_banner{
+            color: white;
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            vertical-align: middle;
+
+
+        }
+        .menu_banner a {
+            text-decoration: none;
+            color: white;
+        }
+        .menu_banner a:hover {
+            color: cadetblue;
+        }
+        .inline-paragraph{
+            display: inline-block;
+            margin-right: 50px;
+            font-size: 150%;
+        }
+
+
+        .intro-section{
+            display: grid;
+            place-items: center;
+            background-color: cadetblue;
+            width: 100%;
+            height: 700px;
+
+        }
+        #picture{
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            max-width: 500px;
+            max-height: 400px;
+        }
+        .intro-section p{
+            margin-top: -75px;
+            color: white;
+            max-width: 700px;
+            font-size: 150%;
+            text-align: center;
+            text-justify: auto;
+        }
+
+        #aboutme-section{
+            /*display: grid;*/
+            /*place-items: baseline;*/
+            background-color: cadetblue;
+            width: 100%;
+            height: 510px;
+        }
+        #aboutme-section img{
+
+            position: absolute;
+            left: 0px;
+            top: 800px;
+            z-index: 1;
+
+
+        }
+        #spaceholder{
+
+            width: 430px;
+            height: 510px;
+            float: left;
+            position: relative;
+            z-index: 2;
+
+        }
+        #description{
+            background-color: gainsboro;
+            opacity: .3;
+            width: 600px;
+            height: 480px;
+            border-radius: 10px;
+
+            position: relative;
+            margin: 0 auto;
+            top: 15px;
+            z-index: 2;
+        }
+        #description p{
+            text-align: center;
+            font-size: 150%;
+        }
+
+        #projects-section{
+            display: inline-flex;
+
+            background-color: cadetblue;
+
+            width: 100%;
+            height: 600px;
+
+        }
+
+        /*#projects-section img{*/
+
+        /*    border-radius: 10px;*/
+        /*    border-color: black;*/
+        /*    border-style: solid;*/
+        /*    border-width: 2px;*/
+        /*    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);*/
+        /*    max-width: 500px;*/
+        /*    max-height: 400px;*/
+        /*    margin: 50px auto;*/
+        /*}*/
+
+        #projects-ophanage{
+
+            background-image: url("1-1 Portfolio Exercise/nastassja-anderson-orphanage-dorm.jpg");
+            background-size: cover;
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            width: 400px;
+            height: 500px;
+            margin: 50px auto;
+        }
+        #projects-temple{
+            background-image: url("1-1 Portfolio Exercise/fantasy-temple-1-11160662.jpg");
+            background-size: cover;
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            width: 400px;
+            height: 500px;
+            margin: 50px auto;
+        }
+
+        #projects-section a{
+            margin: 0 auto;
+
+        }
+        #projects-section a:hover{
+            animation: ease-out 0.5s;
+        }
+        #contactme-section{
+            background-color: cadetblue;
+            width: 100%;
+            height: 200px;
+
+        }
+        #contactme-section form{
+            font-size: 150%;
+            text-align: center;
+        }
+        #contactme-section input[type='email']{
+            border-radius: 10px;
+            width: 300px;
+            height: 30px;
+        }
+        #contactme-section input[type='submit']{
+            border-radius: 10px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="menu_banner">
+        <a class="inline-paragraph" href="#aboutme-section">ABOUT ME</a>
+        <a class="inline-paragraph" href="#projects-section">PROJECTS</a>
+        <a class="inline-paragraph" href="#contactme-section">CONTACT ME</a>
+    </div>
+
+    <div class="intro-section">
+        <img id="picture" src="Jorwin%20Stonegrace%20screenshot.png">
+        <p>
+            I'm a brave adventurer who doesn't like to be thrown. Even when the party really wants to.
+        </p>
+    </div>
+
+    <div class="menu_banner">
+        <p class="inline-paragraph">ABOUT ME</p>
+    </div>
+
+    <div id="aboutme-section">
+
+
+        <div id="spaceholder"> </div>
+        <img src="mystical-mountain-castle-expanded.png">
+
+        <div id="description">
+            <p>
+                This is where I grew up. Deep in the cliffs below this castle.
+                It was a great life until the goblins came and made me an orphan.
+                After that I was a street urchin doing what it took to survive.
+                Now I look after the orphans.
+            </p>
+        </div>
+    </div>
+
+    <div class="menu_banner">
+        <p class="inline-paragraph">PROJECTS</p>
+    </div>
+
+    <div id="projects-section">
+        <a href="orphanage.html">
+            <div id="projects-ophanage">
+
+            </div>
+        </a>
+        <a href="temple.html">
+            <div id="projects-temple">
+
+            </div>
+        </a>
+    </div>
+
+    <div class="menu_banner">
+        <p class="inline-paragraph">CONTACT ME</p>
+    </div>
+    
+    <div id="contactme-section">
+
+        <form>
+            <label for="email">Your Email</label><br>
+            <input type="email" name="email" id="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </div>
+
+
+
+
+
+</body>
+</html>

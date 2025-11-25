@@ -1,0 +1,126 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans');
+
+/*// <weight>: Use a value from 100 to 900*/
+/*// <uniquifier>: Use a unique and descriptive class name*/
+/*.noto-sans-<uniquifier> {*/
+/*                font-family: "Noto Sans", sans-serif;*/
+/*                font-optical-sizing: auto;*/
+/*                font-weight: <weight>;*/
+/*                font-style: normal;*/
+/*                font-variation-settings:*/
+/*                        "wdth" 100;*/
+/*            }*/
+
+body {
+    margin: 0;
+}
+.wrapper {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #8585FF;
+    padding: 0 30px 0 30px;
+}
+.grid {
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr 2fr;
+    grid-gap: 5px;
+    padding: 5px;
+    background-color: rgb(157, 146, 191, .2);
+
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+}
+#logo {
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+    width: 128px;
+    height: 64px;
+    padding-top: 3px;
+
+}
+#brand {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 128px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1998FF;
+}
+#game-banner {
+    height: 74px;
+
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+    background-image: url("/3-media/3-1 images/placeholdergamebanner.png");
+
+}
+
+#extra {
+    grid-column-start: 8;
+
+    grid-row-start: 1;
+    width: 128px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1998FF;
+}
+#menu {
+    grid-column-start: 9;
+
+    grid-row-start: 1;
+    width: 128px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1998FF;
+}
+
+.clear {
+    clear: both;
+}
+#games-matrix {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 10;
+    grid-row-end: 7;
+
+
+    justify-content: center;
+    padding: 0px;
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+
+}
+#games-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.game-thumbnail {
+
+
+    width: 256px;
+    height: 384px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #6396E9;
+}

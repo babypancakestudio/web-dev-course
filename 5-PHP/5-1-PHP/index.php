@@ -12,6 +12,7 @@
         }
         if($isKnown){
             echo "hi there, ".$_POST["name"].'!';
+            echo "How old are you?";
         }
         else{
             echo "Sorry, I don't know you.";
@@ -28,3 +29,5 @@
     <p><input type="submit" value="Submit"></p>
 
 </form>
+
+
